@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import AutoGenSeenPhrase from "./component/AutoGenSeenPhrase";
+import ConfirmYourSeedPhrase from "./component/ConfirmYourSeedPhrase";
+import CustomSeedPhrase from "./component/CustomSeedPhrase";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex justify-evenly bg-slate-200 ">
+      <AutoGenSeenPhrase />
+      <CustomSeedPhrase />
+      <ConfirmYourSeedPhrase />
     </div>
   );
 }
